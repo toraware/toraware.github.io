@@ -1,0 +1,241 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  font-size: 95%;
+  color: #0f96bb;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 6%;
+  text-align: center;
+}
+h1 {
+  margin-top: 0;
+  margin-right: 1%;
+  float: right;
+  color: #0f96bb;
+  font-size: 50%;
+}
+h4 {
+  color: #0f96bb;
+}
+#parms label {
+  clear: right;
+  float: right;
+  font-size: 85%;
+  color: #243945;
+  font-style: italic;
+}
+#hitLimit:hover {
+  transform: scale(1.4);
+}
+#dbStart:hover,
+#dbEnd:hover {
+  transform: scale(1.1);
+}
+#parms {
+  clear: left;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hitLimit {
+  font-size: 65%;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 1%;
+  margin-left: 2px;
+  margin-bottom: 1.5%;
+  border: 0;
+  color: #0f96bb;
+}
+#methods {
+  width: 90%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#methods span {
+  font-size: 50%;
+  padding-left: 2%;
+}
+legend {
+  font-size: 80%;
+  margin-left: 12%;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #0f96bb;
+}
+#optionsDiv span {
+  font-weight: bold;
+}
+#optionsDiv {
+  width: 100%;
+  float: left;
+  clear: left;
+  margin-left: 0;
+}
+#instruct .righty {
+  margin-right: 2%;
+}
+#instruct .lefty {
+  margin-left: 2%;
+}
+#phRadios #instruct {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 80%;
+  width: 95%;
+  margin: auto;
+  margin-top: 3px;
+  color: #0f96bb;
+}
+#phRadios label.righty {
+  margin-top: 0;
+  margin-right: 1%;
+  float: right;
+  clear: right;
+}
+#phRadios label.lefty {
+  padding-top: 1px;
+  float: left;
+}
+#phRadios input {
+  margin-left: 4px;
+  clear: left;
+  float: left;
+  vertical-align: middle;
+}
+#dbStart,
+#dbEnd {
+  text-decoration: underline;
+  margin-top: 0;
+  direction: rtl;
+  color: #0f96bb;
+}
+fieldset {
+  border: 1px solid #999;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #999;
+}
+#fsOuter label {
+  font-size: 80%;
+}
+#fsOuter {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 0;
+  margin-top: 1%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+#fsInner {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+#beEntryLbl {
+  float: left;
+  margin-right: 1%;
+}
+#rTableHead {
+  color: #243945;
+  text-align: center;
+  font-size: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tdRed {
+  float: right;
+  clear: right;
+  margin-top: 1.5%;
+  color: red;
+  text-align: right;
+  width: 55%;
+  padding-right: 1%;
+}
+#tdBlack {
+  float: right;
+  clear: right;
+  margin-top: 1.5%;
+  color: black;
+  text-align: right;
+  width: 55%;
+}
+#tdWhere {
+  float: left;
+  clear: both;
+  text-align: left;
+  width: 45%;
+  margin-top: 1.5%;
+  padding-left: 1%;
+}
+#tdResult {
+  font-size: 75%;
+  float: right;
+  clear: both;
+  text-align: right;
+  width: 55%;
+  padding-right: 1%;
+}
+#buttons button {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 2em;
+  width: 7em;
+  font-weight: bold;
+  border-radius: 7px;
+  background: transparent;
+  color: #30c7ef;
+}
+#buttons {
+  width: 14em;
+  position: fixed;
+  left: 20%;
+  top: 87%;
+}
+#BackButton {
+  float: left;
+}
+#GoButton {
+  float: right;
+}
+#methods button {
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  font-size: 100%;
+  box-shadow: 0 0 1px #000;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 7px;
+  background-color: #30c7ef;
+  color: white;
+  height: 2rem;
+  margin-top: 1.5%;
+}
+#keyTextfield {
+  margin-top: 3px;
+  border: 1px solid #409af8;
+}
+#kbDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

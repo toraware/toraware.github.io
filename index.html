@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+   <meta name="description" content="Torah Search Tool.Category Judaica.Jewish Reference Tool.Torah-Tanach Search Engine.Hebrew Bible Concordance.Portable Torah Index.Handy Torah Index.">
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+   <title>ToraTool</title>
+   <link rel="manifest" href="/manifest.json">
+   <link rel="stylesheet" href="css/tw.css" type="text/css">
+   <script type="text/javascript" src="js/tw.js"></script>
+   <script type="text/javascript" async src="db/utf8_dbKsiv.js"></script>
+   <link rel="icon" type="image/ico" href="pics/twTab.png"/>
+</head>
+<body>
+   <div>
+      <h1>בס׳׳ד</h1>
+      <img src="pics/twLogo.png" alt="Torah Search Program" style="width:92px;height:30px;">
+      <h2>&nbsp;תנ׳׳ך &nbsp;Search Tool &nbsp;</h2>
+      <div id="parms">
+         <label>Hits limit: <input type="text" id="hitLimit" value="35" size="3" maxlength="4"></label>
+         <label><b>From </b>:
+            <select id="dbStart">
+               <option value="1" selected="selected">בראשית</option>
+               <option value="2">נח</option>
+               <option value="3">לך לך</option>
+               <option value="4">וירא</option>
+               <option value="5">חיי שרה</option>
+               <option value="6">תולדות</option>
+               <option value="7">ויצא</option>
+               <option value="8">וישלח</option>
+               <option value="9">וישב</option>
+               <option value="10">מקץ</option>
+               <option value="11">ויגש</option>
+               <option value="12">ויחי</option>
+               <option value="13">שמות</option>
+               <option value="14">וארא</option>
+               <option value="15">בא</option>
+               <option value="16">בשלח</option>
+               <option value="17">יתרו</option>
+               <option value="18">משפטים</option>
+               <option value="19">תרומה</option>
+               <option value="20">תצוה</option>
+               <option value="21">כי תשא</option>
+               <option value="22">ויקהל</option>
+               <option value="23">פקודי</option>
+               <option value="24">ויקרא</option>
+               <option value="25">צו</option>
+               <option value="26">שמיני</option>
+               <option value="27">תזריע</option>
+               <option value="28">מצורע</option>
+               <option value="29">אחרי מות</option>
+               <option value="30">קדושים</option>
+               <option value="31">אמור</option>
+               <option value="32">בהר</option>
+               <option value="33">בחקתי</option>
+               <option value="34">במדבר</option>
+               <option value="35">נשא</option>
+               <option value="36">בהעלותך</option>
+               <option value="37">שלח</option>
+               <option value="38">קרח</option>
+               <option value="39">חקת</option>
+               <option value="40">בלק</option>
+               <option value="41">פנחס</option>
+               <option value="42">מטות</option>
+               <option value="43">מסעי</option>
+               <option value="44">דברים</option>
+               <option value="45">ואתחנן</option>
+               <option value="46">עקב</option>
+               <option value="47">ראה</option>
+               <option value="48">שופטים</option>
+               <option value="49">כי תצא</option>
+               <option value="50">כי תבוא</option>
+               <option value="51">נצבים</option>
+               <option value="52">וילך</option>
+               <option value="53">האזינו</option>
+               <option value="54">וזאת הברכה</option>
+               <option value="55">יהושע</option>
+               <option value="56">ספר שופטים</option>
+               <option value="57">שמואל א</option>
+               <option value="58">שמואל ב</option>
+               <option value="59">מלכים א</option>
+               <option value="60">מלכים ב</option>
+               <option value="61">תהילים</option>
+               <option value="62">ישעיה</option>
+               <option value="63">ירמיה</option>
+               <option value="64">יחזקאל</option>
+               <option value="65">הושע</option>
+               <option value="66">יואל</option>
+               <option value="67">עמוס</option>
+               <option value="68">עובדיה</option>
+               <option value="69">שיר השירים</option>
+               <option value="70">אסתר</option>
+               <option value="71">יונה</option>
+               <option value="72">מיכה</option>
+               <option value="73">נחום</option>
+               <option value="74">חבקוק</option>
+               <option value="75">צפניה</option>
+               <option value="76">חגי</option>
+               <option value="77">זכריה</option>
+               <option value="78">מלאכי</option>
+               <option value="79">קהלת</option>
+               <option value="80">איכה</option>
+               <option value="81">משלי</option>
+               <option value="82">רות</option>
+               <option value="83">איוב</option>
+               <option value="84">דניאל</option>
+               <option value="85">עזרא</option>
+               <option value="86">נחמיה</option>
+               <option value="87">דברי הימים א</option>
+               <option value="88">דברי הימים ב</option>
+            </select>
+         </label>         
+         <label>To <b>end of</b>:
+            <select id="dbEnd">
+               <option value="1">בראשית</option>
+               <option value="2">נח</option>
+               <option value="3">לך לך</option>
+               <option value="4">וירא</option>
+               <option value="5">חיי שרה</option>
+               <option value="6">תולדות</option>
+               <option value="7">ויצא</option>
+               <option value="8">וישלח</option>
+               <option value="9">וישב</option>
+               <option value="10">מקץ</option>
+               <option value="11">ויגש</option>
+               <option value="12">ויחי</option>
+               <option value="13">שמות</option>
+               <option value="14">וארא</option>
+               <option value="15">בא</option>
+               <option value="16">בשלח</option>
+               <option value="17">יתרו</option>
+               <option value="18">משפטים</option>
+               <option value="19">תרומה</option>
+               <option value="20">תצוה</option>
+               <option value="21">כי תשא</option>
+               <option value="22">ויקהל</option>
+               <option value="23">פקודי</option>
+               <option value="24">ויקרא</option>
+               <option value="25">צו</option>
+               <option value="26">שמיני</option>
+               <option value="27">תזריע</option>
+               <option value="28">מצורע</option>
+               <option value="29">אחרי מות</option>
+               <option value="30">קדושים</option>
+               <option value="31">אמור</option>
+               <option value="32">בהר</option>
+               <option value="33">בחקתי</option>
+               <option value="34">במדבר</option>
+               <option value="35">נשא</option>
+               <option value="36">בהעלותך</option>
+               <option value="37">שלח</option>
+               <option value="38">קרח</option>
+               <option value="39">חקת</option>
+               <option value="40">בלק</option>
+               <option value="41">פנחס</option>
+               <option value="42">מטות</option>
+               <option value="43">מסעי</option>
+               <option value="44">דברים</option>
+               <option value="45">ואתחנן</option>
+               <option value="46">עקב</option>
+               <option value="47">ראה</option>
+               <option value="48">שופטים</option>
+               <option value="49">כי תצא</option>
+               <option value="50">כי תבוא</option>
+               <option value="51">נצבים</option>
+               <option value="52">וילך</option>
+               <option value="53">האזינו</option>
+               <option value="54" >וזאת הברכה</option>
+               <option value="55">יהושע</option>
+               <option value="56">ספר שופטים</option>
+               <option value="57">שמואל א</option>
+               <option value="58">שמואל ב</option>
+               <option value="59">מלכים א</option>
+               <option value="60">מלכים ב</option>
+               <option value="61">תהילים</option>
+               <option value="62">ישעיה</option>
+               <option value="63">ירמיה</option>
+               <option value="64">יחזקאל</option>
+               <option value="65">הושע</option>
+               <option value="66">יואל</option>
+               <option value="67">עמוס</option>
+               <option value="68">עובדיה</option>
+               <option value="69">שיר השירים</option>
+               <option value="70">אסתר</option>
+               <option value="71">יונה</option>
+               <option value="72">מיכה</option>
+               <option value="73">נחום</option>
+               <option value="74">חבקוק</option>
+               <option value="75">צפניה</option>
+               <option value="76">חגי</option>
+               <option value="77">זכריה</option>
+               <option value="78">מלאכי</option>
+               <option value="79">קהלת</option>
+               <option value="80">איכה</option>
+               <option value="81">משלי</option>
+               <option value="82">רות</option>
+               <option value="83">איוב</option>
+               <option value="84">דניאל</option>
+               <option value="85">עזרא</option>
+               <option value="86">נחמיה</option>
+               <option value="87">דברי הימים א</option>
+               <option value="88" selected="selected">דברי הימים ב</option>
+            </select>
+         </label>   
+      </div>
+   </div>
+   <div id="buttons">
+
+   </div>
+   <div id="methods">
+      <div><button onclick="displayOptions('ww')">Find a word</button></div> 
+      <div><button onclick="displayOptions('ph')">Find a phrase</button></div> 
+   </div>
+   <div id="optionsDiv"></div>
+   <div id="kbDiv"></div>
+</body>
+</html>
