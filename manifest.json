@@ -1,15 +1,17 @@
 {
-  "name": "toraware",
+  "name": "Toraware",
   "version": "1.0",
   "description": "Handy Torah Search Program",
   "icons": [
     {
       "src": "pics/twTab.png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
       "src": "pics/twLogo.png",
-      "sizes": "765 × 253"
+      "sizes": "765×253",
+      "type": "image/png"
     }
   ],
   "scope": "/",
