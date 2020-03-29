@@ -2,6 +2,7 @@
   "name": "Toraware",
   "version": "1.0",
   "description": "Handy Torah Search Program",
+  "short_name": "Toraware",
   "icons": [
     {
       "src": "pics/twTab_192.png",
