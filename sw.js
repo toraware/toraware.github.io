@@ -3,8 +3,8 @@ var filesToCache = [
   "/",
   "/index.html",
   "/css/tw.css",
-  "/db/utf8_dbKsiv.js",
-  "/js/main.js"
+  "/js/tw.js",
+  "/db/utf8_dbKsiv.js"
 ];
 
 /* Start the service worker and cache all of the app's content */
