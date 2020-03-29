@@ -18,6 +18,11 @@
       "src": "pics/twLogo_765x253.png",
       "sizes": "765×253",
       "type": "image/png"
+    },
+    {
+      "src": "pics/apple_180.png",
+      "sizes": "180×180",
+      "type": "image/png"
     }
   ],
   "scope": "/",
