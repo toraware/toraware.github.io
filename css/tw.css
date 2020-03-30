@@ -96,6 +96,7 @@ legend {
   margin-right: 1%;
   float: right;
   clear: right;
+  text-align: right;
 }
 #phRadios label.lefty {
   padding-top: 1px;
