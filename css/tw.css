@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 img {
-  display: block;
+  float: left;
 }
 h2 {
   font-size: 95%;
@@ -11,6 +11,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 0;
   float: left;
+  clear: left;
 }
 h1 {
   margin-top: 0;
