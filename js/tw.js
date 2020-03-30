@@ -58,7 +58,7 @@ function validateTxt() {
             "Just for your information: " +
               " Spaces were removed from " +
               glUserIP +
-              "\nbecause this method requires only one word."
+              "\nbecause this method requires only one string of letters."
           );
           glUserIP = glUserIP.replace(/\s/g, ""); //removes spaces
         }
