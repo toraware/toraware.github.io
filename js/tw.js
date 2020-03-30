@@ -480,7 +480,7 @@ function displayOptions(choice) {
     return;
   }
   anchorHit = choice;
-  //  document.getElementById("parms").style.display =  "none";
+  document.getElementById("parms").style.display = "none";
   document.getElementById("methods").style.display = "none";
   document.getElementById("BackButton").style.display = "inline";
   document.getElementById("GoButton").style.display = "inline";
