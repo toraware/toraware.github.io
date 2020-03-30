@@ -22,6 +22,7 @@ function validateLimits() {
     listSize.value = "35";
     return false;
   }
+
   if (navigator.cookieEnabled) {
     sessionStorage.setItem("first", dbStart.value);
     sessionStorage.setItem("second", dbEnd.value);
@@ -32,12 +33,47 @@ function validateLimits() {
 }
 
 function validateTxt() {
-  // Validate it's Hebrew
-  if (document.getElementById("keyTextfield").value === "") return false;
-  var dataArray = glUserIP.replace(/\s/g, "");
-  if (dataArray.length < 1) return false;
-  var HebrewChars = new RegExp("^[\u0590-\u05FF]+$");
-  if (!HebrewChars.test(dataArray)) {
+  var tORf = true;
+  glUserIP = glUserIP.trim();
+  var dataArray = glUserIP.replace(/\s/g, ""); //removes spaces
+  if (dataArray.length < 1) {
+    alert("Error encountered. Nothing entered.");
+    tORf = false;
+  } else {
+    var HebrewChars = new RegExp("^[\u0590-\u05FF]+$");
+    if (!HebrewChars.test(dataArray)) {
+      alert(
+        "Error encountered.\nYou entered: " +
+          glUserIP +
+          "\n\nEnter Hebrew text only!"
+      );
+      tORf = false;
+    }
+  }
+  if (tORf == true) {
+    switch (anchorHit) {
+      case "ww":
+        if (glUserIP.indexOf(" ") !== -1) {
+          alert(
+            "Just for your information: " +
+              " Spaces were removed from " +
+              glUserIP +
+              "\nbecause this method requires only one word."
+          );
+          glUserIP = glUserIP.replace(/\s/g, ""); //removes spaces
+        }
+        break;
+      case "ph":
+        if (glUserIP.indexOf(" ") < 1) {
+          alert("\n\nSorry;\nLess than two words detected!");
+          tORf = false;
+        }
+        break;
+    }
+  }
+  if (tORf == false) {
+    document.getElementById("keyTextfield").value = "";
+    document.getElementById("keyTextfield").focus();
     return false;
   }
   return true;
@@ -401,54 +437,16 @@ function radioButtons() {
 }
 
 function go() {
-  radioButtons();
   glUserIP = document.getElementById("keyTextfield").value;
   glUserIP = glUserIP.trim();
-  glUserIP = glUserIP.replace(/  +/g, " "); //Replace multiple spaces with a single space
-  if (!validateTxt()) {
-    // invalid Hebrew text
-    if (document.getElementById("keyTextfield").value !== "") {
-      alert(
-        "Error encountered.\nYou entered: " +
-          glUserIP +
-          "\n\nEnter Hebrew text only!"
-      );
-    } else {
-      alert("Input error.\n\nEnter your Hebrew text!");
-    }
-    document.getElementById("keyTextfield").value = "";
-    document.getElementById("keyTextfield").focus();
-    return;
+  glUserIP = glUserIP.replace(/  +/g, " "); //rep many spaces with one space
+  if (validateTxt()) {
+    glTitleTxt = glUserIP;
+    radioButtons();
+    executeCode();
+    document.getElementById("GoButton").style.display = "none";
+    document.getElementById("BackButton").style.display = "inline";
   }
-  switch (anchorHit) {
-    case "ww":
-      if (glUserIP.indexOf(" ") !== -1) {
-        alert(
-          "Error; You entered: " +
-            glUserIP +
-            "\n\nMore than one word detected! " +
-            "\nThis method requires only one word."
-        );
-        document.getElementById("keyTextfield").value = "";
-        document.getElementById("keyTextfield").focus();
-        return;
-      }
-      break;
-    case "ph":
-      if (glUserIP.indexOf(" ") < 1) {
-        alert(
-          "Error; You entered: " +
-            glUserIP +
-            "\n\nLess than two words detected!\n\nEnter more words, separated by spaces;\nOr, \nUse 'Find a Word' instead."
-        );
-        document.getElementById("keyTextfield").value = "";
-        document.getElementById("keyTextfield").focus();
-        return;
-      }
-      break;
-  }
-  glTitleTxt = glUserIP;
-  executeCode();
 }
 
 function makeEle(p) {
@@ -860,8 +858,6 @@ function backRoutine() {
   }
 }
 function goRoutine() {
-  document.getElementById("GoButton").style.display = "none";
-  document.getElementById("BackButton").style.display = "inline";
   go();
 }
 
