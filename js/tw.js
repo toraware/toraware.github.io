@@ -10,7 +10,7 @@ function validateLimits() {
         "').\n\nThe RANGE limits are therefore being reset to default values."
     );
     dbStart.value = 1;
-    dbEnd.value = 54;
+    dbEnd.value = 88;
     return false;
   }
   var listSize = document.getElementById("hitLimit");
