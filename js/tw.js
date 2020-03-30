@@ -599,12 +599,12 @@ var fldsetWW = makeEle({
         makeEle({
           tag: "label",
           attr: { class: "lefty" },
-          dom: [document.createTextNode("Enter your string of letters ")]
+          dom: [document.createTextNode("Enter a string of letters ")]
         }),
         makeEle({
           tag: "label",
           attr: { class: "righty" },
-          dom: [document.createTextNode(" הכנס האותיות שלך לפי סדר")]
+          dom: [document.createTextNode("הכנס אותיות לפי סדר")]
         })
       ]
     })
@@ -716,7 +716,7 @@ var fldsetPH = makeEle({
         makeEle({
           tag: "label",
           attr: { class: "righty" },
-          dom: [document.createTextNode("שים מילים בסדר ורווח ביניהם")]
+          dom: [document.createTextNode("שים רווח בין מיתרי אותיות")]
         })
       ]
     })
