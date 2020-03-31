@@ -35,7 +35,7 @@ function validateLimits() {
 function validateTxt() {
   var tORf = true;
   glUserIP = glUserIP.trim();
-  var dataArray = glUserIP.replace(/\s/g, ""); //removes spaces
+  var dataArray = glUserIP.replace(/\s/g, ""); //temp remove spaces
   if (dataArray.length < 1) {
     alert("Error encountered. Nothing entered.");
     tORf = false;
@@ -53,15 +53,8 @@ function validateTxt() {
   if (tORf == true) {
     switch (anchorHit) {
       case "ww":
-        if (glUserIP.indexOf(" ") !== -1) {
-          alert(
-            "Just for your information: " +
-              " Spaces were removed from " +
-              glUserIP +
-              "\nbecause this method requires only one string of letters."
-          );
-          glUserIP = glUserIP.replace(/\s/g, ""); //removes spaces
-        }
+        glUserIP = glUserIP.replace(/\s/g, ""); //remove spaces
+        document.getElementById("keyTextfield").value = glUserIP;
         break;
       case "ph":
         if (glUserIP.indexOf(" ") < 1) {
@@ -723,7 +716,7 @@ var fldsetPH = makeEle({
 var KBinput = makeEle({
   tag: "input",
   id: "keyTextfield",
-  attr: { type: "text", size: "35", maxlength: "100" }
+  attr: { type: "text", size: "35", maxlength: "235" }
 });
 
 var ppNames = [
