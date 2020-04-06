@@ -1,37 +1,77 @@
 {
-  "name": "Toraware",
-  "version": "1.1",
-  "description": "Handy Torah Search Program",
   "short_name": "Toraware",
+  "name": "Torah Search Tool",
+  "version": "1.0",
+  "description": "A Handy Torah Search Tool",
   "icons": [
     {
-      "src": "pics/twTab_48.png",
-      "sizes": "48x48",
+      "src": "pics/ms-icon-144.png",
+      "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "pics/twTab_128.png",
-      "sizes": "128x128",
+      "src": "pics/favicon-96.png",
+      "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "pics/twTab_192.png",
+      "src": "pics/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-114.png",
+      "sizes": "114x114",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-76.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-60.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/apple-icon-57.png",
+      "sizes": "57x57",
+      "type": "image/png"
+    },
+    {
+      "src": "pics/android-icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "pics/twTab_512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "pics/twLogo_765x253.png",
-      "sizes": "765×253",
-      "type": "image/png"
-    },
-    {
-      "src": "pics/apple_180.png",
-      "sizes": "180×180",
       "type": "image/png"
     }
   ],
@@ -40,5 +80,5 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "black"
+  "theme_color": "#000000"
 }
