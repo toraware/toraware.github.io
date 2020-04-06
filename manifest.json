@@ -73,6 +73,11 @@
       "src": "pics/android-icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
+    },
+    {
+      "src": "pics/android-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "scope": "/",
